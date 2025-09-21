@@ -1,7 +1,7 @@
 FROM nginx:1.14-alpine
 LABEL maintainer="NGINX ECS container <ychkim@lotte.net>"
 
-COPY ./index.html /usr/share/nginx/html/index.html
+COPY ./default.conf /etc/nginx/conf.d/default.conf
 
 EXPOSE 80
 

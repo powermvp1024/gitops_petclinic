@@ -10,7 +10,7 @@ metadata:
   labels:
     app: tomcatwas
 spec:
-  replicas: 4
+  replicas: 1
   selector:
     matchLabels:
       app: tomcatwas
@@ -55,4 +55,5 @@ spec:
   minReplicas: 2
   maxReplicas: 6
   targetCPUUtilizationPercentage: 30
+
 

@@ -5,7 +5,7 @@ metadata:
     app: eks-nginx
   name: eks-nginx
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       app: eks-nginx
@@ -17,6 +17,7 @@ spec:
       containers:
       - image: 572638914147.dkr.ecr.ap-northeast-2.amazonaws.com/ecr_nginx/ecr_nginx:ff6060b
         name: eks-nginx
+
 
 
 
